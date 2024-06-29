@@ -129,15 +129,14 @@ define Device/bdcom_wap2100-sk
 endef
 TARGET_DEVICES += bdcom_wap2100-sk
 
-define Device/bolt_bl100
+define Device/bolt_bl201
   SOC := mt7620a
   IMAGE_SIZE := 15872k
   DEVICE_VENDOR := Bolt
-  DEVICE_MODEL := BL100
-  DEVICE_PACKAGES := kmod-mt76x2 kmod-usb2 kmod-usb-ohci
-  UIMAGE_MAGIC := 0x26112015
+  DEVICE_MODEL := BL201
+  DEVICE_PACKAGES := kmod-mt76x2
 endef
-TARGET_DEVICES += bolt_bl100
+TARGET_DEVICES += bolt_bl201
 
 define Device/buffalo_whr-1166d
   SOC := mt7620a
